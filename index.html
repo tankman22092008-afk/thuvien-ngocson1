@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện Tài liệu Nguyễn Ngọc Sơn - CSP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background-color: var(--bg); color: #333; }
+        header { background: linear-gradient(135deg, var(--primary), #1a252f); color: #fff; padding: 50px 20px; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+        header h1 { margin: 0; font-size: 2.3em; letter-spacing: 1px; }
+        .container { max-width: 1100px; margin: -40px auto 50px; padding: 0 20px; }
+        section { background: var(--card-bg); padding: 35px; margin-bottom: 25px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary); display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        
+        .info-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        .contact-box { background: #f8faff; padding: 20px; border-radius: 12px; border: 1px solid #d1d9e6; }
+        .contact-box ul { list-style: none; padding: 0; }
+        .contact-box li { margin-bottom: 12px; font-size: 0.95em; }
+        .contact-box a { color: var(--accent); text-decoration: none; font-weight: bold; }
+
+        /* Tài liệu list */
+        .subject-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+        .card-header { background: #fdfdfd; padding: 15px 25px; border-bottom: 1px solid #eee; font-weight: bold; color: #d35400; font-size: 1.2em; }
+        .doc-list { list-style: none; padding: 0; margin: 0; }
+        .doc-item { 
+            padding: 12px 25px; 
+            border-bottom: 1px solid #f9f9f9; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .doc-item:hover { background: #fcfdfe; }
+        .doc-title { font-weight: 500; color: #444; text-decoration: none; flex: 1; padding-right: 15px; }
+        .btn-view { background: var(--accent); color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; font-size: 0.8em; transition: 0.3s; white-space: nowrap; }
+        .btn-view:hover { background: var(--primary); }
+
+        footer { text-align: center; padding: 30px; color: #888; font-size: 0.9em; }
+        @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } .doc-item { flex-direction: column; align-items: flex-start; gap: 10px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thư viện của Ngọc Sơn</h1>
+        <p>"Chia sẻ điều mình biết, học thêm điều mình chưa biết"</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2><i class="fas fa-user-edit"></i> Giới thiệu</h2>
+            <div class="info-grid">
+                <div class="bio">
+                    <p><strong>Nguyễn Ngọc Sơn</strong> (22/09/2008)</p>
+                    <p>Học sinh trường <strong>THPT Chuyên Đại học Sư phạm Hà Nội (CSP)</strong>.</p>
+                    <p style="text-align: justify;">Trang web tập trung vào việc chia sẻ tài liệu học tập hệ thống, rõ ràng, chú trọng tư duy Toán học và lập luận chặt chẽ. Hy vọng giúp ích cho những ai yêu thích tri thức và logic.</p>
+                </div>
+                <div class="contact-box">
+                    <ul style="margin: 0;">
+                        <li><i class="fas fa-phone"></i> 037.404.1814</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:nguyenngocsoncsp@gmail.com">Email của Sơn</a></li>
+                        <li><i class="fab fa-facebook"></i> <a href="https://web.facebook.com/profile.php?id=61575703859555" target="_blank">Fanpage SMFE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-calculator"></i> 1. Toán học</h2>
+            
+            <div class="subject-card">
+                <div class="card-header">Tài liệu THCS & THPT</div>
+                <ul class="doc-list">
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1kzvwGkPUG2FwWrMY9qLfpdS-qTfIwVNs/view?usp=sharing" target="_blank" class="doc-title">Tài liệu hình học lớp 9.pdf</a>
+                        <a href="https://drive.google.com/file/d/1kzvwGkPUG2FwWrMY9qLfpdS-qTfIwVNs/view?usp=sharing" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <span class="doc-title">Chuyên đề Giải tích 12.pdf (Đang cập nhật)</span>
+                        <a href="#" class="btn-view" style="background:#ccc">Sắp có</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subject-card">
+                <div class="card-header">Bài viết trên Fanpage SMFE (Olympic & Chuyên)</div>
+                <ul class="doc-list">
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1lzLYD20XLDLeZ3euRePMcPmQqGFnrm-o/view" target="_blank" class="doc-title">Kì thi Giao lưu Toán học Turkmenistan 2025</a>
+                        <a href="https://drive.google.com/file/d/1lzLYD20XLDLeZ3euRePMcPmQqGFnrm-o/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1DGSqPcC2cWusTSkhm6_uK7A_EP7IuDBw/view" target="_blank" class="doc-title">Hình học Olympic Chuyên KHTN (HSGSO)</a>
+                        <a href="https://drive.google.com/file/d/1DGSqPcC2cWusTSkhm6_uK7A_EP7IuDBw/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1MNZzkyoqPwsecKXsKNa1FrimHK3a1zmj/view" target="_blank" class="doc-title">Lời giải kì thi Olympic Chuyên KHTN năm 2025</a>
+                        <a href="https://drive.google.com/file/d/1MNZzkyoqPwsecKXsKNa1FrimHK3a1zmj/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1WznFkIK884PwlIoiQPNujAgmm7GTGahj/view" target="_blank" class="doc-title">Lời giải đề thi vào 10 chuyên KHTN 2025</a>
+                        <a href="https://drive.google.com/file/d/1WznFkIK884PwlIoiQPNujAgmm7GTGahj/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1WeDYQotrvBv43f2-NEEbGzzAfG0P6KKv/view" target="_blank" class="doc-title">Lời giải vào 10 chuyên Toán, chuyên Tin TP. Hà Nội 2025</a>
+                        <a href="https://drive.google.com/file/d/1WeDYQotrvBv43f2-NEEbGzzAfG0P6KKv/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1-qorsj9-TX6SktmFp575vteKqTEmYvlF/view" target="_blank" class="doc-title">Ứng dụng của phương tích trong hình học phẳng</a>
+                        <a href="https://drive.google.com/file/d/1-qorsj9-TX6SktmFp575vteKqTEmYvlF/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1esBwQSgXs_4GpP4y1ZdtTnt8qaXzQTZU/view" target="_blank" class="doc-title">Kĩ thuật nâng luỹ thừa (LTE) và số mũ đúng</a>
+                        <a href="https://drive.google.com/file/d/1esBwQSgXs_4GpP4y1ZdtTnt8qaXzQTZU/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1JVzJckseRJ2ydORnvYXSjYMyGHBmtxEr/view" target="_blank" class="doc-title">Tỷ số đơn - Tỷ số kép - Hàng điểm điều hoà</a>
+                        <a href="https://drive.google.com/file/d/1JVzJckseRJ2ydORnvYXSjYMyGHBmtxEr/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/11cvmofGmoLguP5Np-xqQ-vxnZ2ZlYkP4/view" target="_blank" class="doc-title">Lời giải đề chọn ĐTQG tỉnh Lạng Sơn (vòng 1) 2025-2026</a>
+                        <a href="https://drive.google.com/file/d/11cvmofGmoLguP5Np-xqQ-vxnZ2ZlYkP4/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/18vqGE2TVOTnMTUHfTMP_iLW0vBYQlbVQ/view" target="_blank" class="doc-title">Olympic trại hè Hùng Vương môn Toán (lớp 10)</a>
+                        <a href="https://drive.google.com/file/d/18vqGE2TVOTnMTUHfTMP_iLW0vBYQlbVQ/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1JzOGFRJ6Z47E0FYTe2fKshLjDWTedOcJ/view" target="_blank" class="doc-title">Olympic trại hè Hùng Vương môn Toán (lớp 11)</a>
+                        <a href="https://drive.google.com/file/d/1JzOGFRJ6Z47E0FYTe2fKshLjDWTedOcJ/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1SBwpwznvGyaoqV3mZO8_lnyzO1QUqdd6/view" target="_blank" class="doc-title">Lời giải chọn ĐTQG tỉnh An Giang 2025-2026</a>
+                        <a href="https://drive.google.com/file/d/1SBwpwznvGyaoqV3mZO8_lnyzO1QUqdd6/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/1Pc3BkQ2ZauEndayemJ6ABOh-7Y_4aNv0/view" target="_blank" class="doc-title">Lời giải chọn ĐTQG Thành phố Cần Thơ 2025-2026</a>
+                        <a href="https://drive.google.com/file/d/1Pc3BkQ2ZauEndayemJ6ABOh-7Y_4aNv0/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                    <li class="doc-item">
+                        <a href="https://drive.google.com/file/d/16LqFXNmfmeDQkvneML7q1so9S-7oNU-X/view" target="_blank" class="doc-title">Bất đẳng thức Schur và phương pháp đổi biến p,q,r</a>
+                        <a href="https://drive.google.com/file/d/16LqFXNmfmeDQkvneML7q1so9S-7oNU-X/view" target="_blank" class="btn-view">Xem file</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <section>
+                <h2><i class="fas fa-atom"></i> 2. Vật lý</h2>
+                <ul class="doc-list">
+                    <li class="doc-item">Tổng ôn kiến thức Vật Lý</li>
+                    <li class="doc-item">Vật lý và những điều chưa kể</li>
+                </ul>
+            </section>
+            <section>
+                <h2><i class="fas fa-flask"></i> 3. Hóa học</h2>
+                <ul class="doc-list">
+                    <li class="doc-item">Hóa học vô cơ cơ bản</li>
+                    <li class="doc-item">Thí nghiệm hóa học thú vị</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nguyễn Ngọc Sơn - THPT Chuyên Sư Phạm</p>
+    </footer>
+
+</body>
+</html>
